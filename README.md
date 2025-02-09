@@ -42,15 +42,19 @@ A fun and interactive **Stone Paper Scissors** game built using **React & Vite**
    ```bash
    git clone https://github.com/iamsansk/React-Stone-Paper-Scissor-Game.git
 ```
+2️⃣ Navigate into the Project Directory
+```bash
+cd React-Stone-Paper-Scissor-Game
+```
 
-2️⃣ Install dependencies:
+3️⃣ Install dependencies:
    ```bash
    npm install
 ```
 
-3️⃣ Start the development server:
+4️⃣ Start the development server:
    ```bash
    npm run dev
 ```
 
-4️⃣ Open http://localhost:5173 in your browser.
+5️⃣ Open http://localhost:5173 in your browser.
