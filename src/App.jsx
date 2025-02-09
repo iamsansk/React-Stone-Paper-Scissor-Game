@@ -1,16 +1,22 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import './App.css'
+import userStoneImage from "../src/assets/uStone.png";
+import userPaperImage from "../src/assets/uPaper.png";
+import userScissorImage from "../src/assets/uScissor.png";
+import computerStoneImage from "../src/assets/cStone.png";
+import computerPaperImage from "../src/assets/cPaper.png";
+import computerScissorImage from "../src/assets/cScissor.png";
 
 function App() {
   const userButtonOptions = {
-    "stone": "../src/assets/uStone.png",
-    "paper": "../src/assets/uPaper.png",
-    "scissor":"../src/assets/uScissor.png"
+    "stone": userStoneImage,
+    "paper": userPaperImage,
+    "scissor":userScissorImage
   }
   const computerOptions = {
-    "stone": "../src/assets/cStone.png",
-    "paper": "../src/assets/cPaper.png",
-    "scissor":"../src/assets/cScissor.png"
+    "stone": computerStoneImage,
+    "paper": computerPaperImage,
+    "scissor":computerScissorImage
   }
   const userWinningChances = [
     ["stone","scissor"],
@@ -81,10 +87,10 @@ function App() {
         {/* Game Area */}
         <div className="game-area">
           <div className={`chosen-image ${clicked ? 'vibrate' : ''}`}>
-            <img src={userChoice} alt="" />
+            <img src={userChoice} alt="Player" />
           </div>
           <div className={`chosen-image ${clicked ? 'vibrate' : ''}`}>
-            <img src={computerChoice} alt="" />
+            <img src={computerChoice} alt="Computer" />
           </div>
         </div>
 
@@ -97,9 +103,9 @@ function App() {
             <p>Pick Your Move 👇</p>
           </div>
           <div className='user-option-buttons'>
-            <img onClick={()=>handleOptionClick("stone")} src="../src/assets/uStone.png" alt="" />
-            <img onClick={()=>handleOptionClick("paper")} src="../src/assets/uPaper.png" alt="" />
-            <img onClick={()=>handleOptionClick("scissor")} src="../src/assets/uScissor.png" alt="" />
+            <img onClick={()=>handleOptionClick("stone")} src={userStoneImage} alt="Stone" />
+            <img onClick={()=>handleOptionClick("paper")} src={userPaperImage} alt="Paper" />
+            <img onClick={()=>handleOptionClick("scissor")} src={userScissorImage} alt="Scissor" />
           </div>
         </div>
       </div>
